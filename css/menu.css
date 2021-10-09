@@ -1,0 +1,118 @@
+
+
+menu li , legend{
+    padding: 2px 10px;    
+    display: inline-block;
+    /* visual do link */
+    border-style: inset;
+    border-width: 1px;
+    border-color: #53a6ea4b;        
+    font-size: 2rem;        
+    border-radius:7px;    
+  }
+
+  .btnSumario{
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .btnSumario.active{
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  menu{
+    text-align: center;
+    padding: 10px;
+    margin:10px;    
+    text-transform: uppercase;    
+  }
+ 
+   menu li:hover, menu li:focus , .headMenu.active, .bar.active{
+    color:247, 245, 245;
+    text-decoration: none;
+    cursor: pointer;       
+    background:#53a7ea;    
+    animation: active 0.2s;
+  }
+
+
+  .floatMenu{
+    display: none;
+    row-gap: 4px;
+    position: fixed;    
+    padding: 1em;            
+    right: 1em;
+    z-index: 2;
+    animation: rightToLeft 0.2s;
+  }
+
+  .floatMenu .head{
+    text-align: center;
+    font-size: 20px;
+    background-color: #53a7ea;
+  }
+
+  .colapse {
+      display: none;
+  }
+
+  .softbox , .floatMenu{    
+      border-style: inset;
+      border-width: 1px;
+     border-radius: 7px;
+     border-color:black;
+     background-color:#1f1f1f
+  }
+    
+  /*responsividade mobile*/
+  @media (max-width: 600px) {
+
+    .colapse{
+      display:flex;
+      justify-content: space-between;
+      margin: -1em;
+      padding: 1em;
+    }
+    
+    .colapse div{
+      font-size:35px;
+      color:green;      
+      padding:2px auto;
+      
+    }
+
+      menu li {
+        display: grid;
+        font-size: 2em;
+        letter-spacing: 3px;
+        line-height: 1em;
+      }
+
+      .menuInner{        
+        position: relative;   
+        margin-top: -50vh;
+        z-index: -100;
+        opacity:0;
+        transition:all 0.7s;
+      }
+
+      .menuInner.active{
+        z-index: 1;                  
+        margin-top: 3vh;       
+        opacity: 1;   
+        transition:opacity 0.4s;
+      }
+
+      menu{
+           top: 0;
+          left: 0;
+        margin: 0px;
+      }
+
+      fieldset{
+          /*display:inline-flex;*/
+          word-break: break-word;
+        }
+
+    }

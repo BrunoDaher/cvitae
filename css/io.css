@@ -1,0 +1,26 @@
+input{
+    padding: 0px;    
+    position: relative;
+    bottom: 6px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.bar > div{    
+    width: 35px;
+    height: 5px;
+    background-color: white;    
+    margin: 6px;
+    position: relative;     
+    border-radius:4px;    
+    padding: 0;
+}
+
+.bar{
+    border-radius:4px;
+}
+
+.bar:hover{
+    cursor:pointer;
+    background:rgb(31, 30, 30);    
+}

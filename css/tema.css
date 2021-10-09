@@ -1,0 +1,150 @@
+
+@import url("io.css");
+@import url("menu.css");
+@import url("grid.css");
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222121; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #53a7ea;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    z-index: 1;
+}
+
+fieldset{
+    border-radius:4px;      
+}
+
+.temaBlack{
+    background-color: rgb(30, 30, 30);
+    color:rgb(228, 228, 228);
+}
+
+.temaWhite{
+    color: rgb(53, 46, 46);
+    background-color:rgb(228, 228, 228);
+}
+
+a:visited, a{
+    color:rgb(228, 228, 228);
+}
+
+p{
+    word-break: break-word;
+}
+
+main{
+    top: 17vh;
+    position: relative;     
+    padding-bottom: 4em;       
+}
+
+main a:hover, a:focus{
+    color:rgb(53, 132, 206);    
+}
+
+.noMark li{
+    list-style: none;    
+}
+
+.noMark{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: circle;
+    padding-bottom: 0.83em;
+}
+
+menu li {            
+     list-style-type:disc;
+     position: relative;
+}
+
+fieldset > form {
+    display: grid !important;
+    padding: 17px;
+    line-height: 36px;
+    margin-bottom: 1em;
+    width: 50%;
+}
+
+legend{
+    text-transform: uppercase;
+    padding:0.4em;
+    margin:0.9em;
+    border-radius:4px;
+    font-size: 1em;
+}
+
+body{
+    margin: 10px;
+    padding: 10px;
+    }
+
+footer {    
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    margin: 0;
+    left: 0;    
+    width: 100%;    
+    padding: 1em;
+   
+}
+
+footer > div{
+    color:#53a7ea;
+    text-align: left;
+   
+}
+
+code{ color:darkorange;}
+
+    input{
+        background-color:rgb(235, 235, 235)
+    }
+
+
+    @media (max-width: 600px) {
+        main{
+            top: 3em;
+            max-height: 82vh;            
+            overflow-y: scroll;
+        }
+    }
+    @media (width: 601px) 
+    {
+        main
+        {
+            top: 10vh;               
+        }
+    }
+    @media (min-width: 1108px) 
+    {
+        main
+        {
+            top: 13vh;               
+        }
+    }
