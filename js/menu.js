@@ -15,6 +15,9 @@ function menuInit(){
         //itera o array e add uma action pra cada elemento
         isHeadMenu.forEach(item => addAction(item));   
     }
+
+    
+    document.querySelector('main').onclick = bodyClick;
 }
 
 function toggle(div){
@@ -35,6 +38,20 @@ function addAction(item){
         loadFrag(item.getAttribute('_target'),'main');
       })
 }
+
+
+function bodyClick(){
+    //alert('body')
+    let statsFloatMenu = document.querySelector('#submenu').style.display;
+    console.log(statsFloatMenu);
+    if(statsFloatMenu == 'grid'){
+        console.log('ativo')
+        toggleMenu();
+        
+    }
+}
+
+
 
 function subMenuBox(str){
     let obj =  criaComp('div','head ',false);
